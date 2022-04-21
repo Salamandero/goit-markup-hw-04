@@ -84,10 +84,12 @@ img {
 .logo{
   margin-right: 93px;
 }
+
 .nav-list {
   display: flex;
-  
+
 }
+
 .nav-list > .item:not(:last-child) {
 margin-right: 50px;
 }
@@ -118,6 +120,18 @@ margin-right: 50px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.nav-item::after{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    content: "";
+    width: 48px;
+    height: 4px;
+    background-color: red;
+}
+
+
 .header-link:hover,
 .header-link:focus,
 .header-mail:hover,
@@ -152,12 +166,14 @@ margin-right: 50px;
   padding: 200px 0;
   text-align: center;
 
-  background-color: #2f303a;
+ 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
      url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1600px 600px;
+  background-color: #C4C4C4;
+ 
  }
 
 .hero-title {
@@ -234,7 +250,7 @@ margin-right: 30px;
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.1666;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -257,7 +273,7 @@ margin-right: 30px;
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.1666;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -298,11 +314,66 @@ margin-right: 30px;
   color: var(--primary-text-color);
 }
 .team-text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.1875;
 
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.social-list-item{
+  display: flex;
+padding-left: 32px;
+padding-right: 32px;
+}
+.social-list-link:not(:last-child){
+  margin-right: 10px;
+}
+
+.social-list-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #AFB1B8;
+}
+.social-list-link:hover,
+.social-list-link:focus{
+  fill: var(--white-text-color);
+  background-color: var(--accent-color);
+  
+}
+
+/* ------- Customers --------- */
+
+.customers-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  color: var(--primary-text-color);
+}
+.customers-list{
+  display: flex;
+}
+.customers-item{
+  max-width: 106px;
+  
+
+  border-radius: 0px 0px 4px 4px;
+}
+.customers-icon{
+  width: 106px;
+  padding: 32px 16px;
+
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
 }
 /* -------------Footer---------------- */
 footer {
@@ -400,6 +471,11 @@ margin-bottom: 20px;
   background: var(--white-text-color);
   border: 1px solid #EEEEEE;
 
+}
+.projects-list > .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* 
