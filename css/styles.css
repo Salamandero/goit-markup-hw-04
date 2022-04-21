@@ -122,7 +122,7 @@ margin-right: 50px;
   letter-spacing: 0.02em;
 }
 
-.nav-item::after{
+/* .nav-item::after{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -130,7 +130,7 @@ margin-right: 50px;
     width: 48px;
     height: 4px;
     background-color: red;
-}
+} */
 
 
 .header-link:hover,
@@ -140,6 +140,7 @@ margin-right: 50px;
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
+  
 }
 .header-contacts {
   display: flex;
@@ -147,14 +148,16 @@ margin-right: 50px;
 
   text-decoration: none;
   }
-  .header-contacts > .item:not(:last-child){
-    margin-right: 50px;
-  }
+.header-contacts > .item:not(:last-child){
+  margin-right: 50px;
+}
 .header-mail,
 .header-tel {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  text-align: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -162,6 +165,20 @@ margin-right: 50px;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+.contacts-item:not(:last-child) {
+  margin-right: 30px;
+}
+.header-icon{
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  fill: currentColor;
+}
+.header-icon:hover,
+.header-icon:focus {
+  color: var(--accent-color);
+}
+
 /* --------------Hero ---------- */
 .hero {
   padding: 200px 0;
