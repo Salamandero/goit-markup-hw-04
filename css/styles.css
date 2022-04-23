@@ -181,6 +181,8 @@ margin-right: 50px;
 
 /* --------------Hero ---------- */
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
   text-align: center;
 
@@ -395,19 +397,21 @@ padding-right: 32px;
   justify-content: center;
   align-items: center;
 }
+
 .customers-item:not(:last-child){
   margin-right: 30px;
 }
 
 .customers-link{
   display: flex;
-  max-width: 170px;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
   height: 92px;
-  padding: 16px 32px;
-  
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   background-color: var(--white-text-color);
+
   fill: var(--icon-color);
 }
 
@@ -465,9 +469,12 @@ padding-right: 32px;
  
   background: var(--white-text-color);
   border: 1px solid #EEEEEE;
-
 }
-.projects-list > .item:hover {
+.projects-link {
+  display: block;
+}
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
